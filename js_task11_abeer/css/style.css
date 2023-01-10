@@ -1,0 +1,162 @@
+body {
+  background-color: white;
+  margin: 0%;
+  padding: 0%;
+}
+
+header h1 {
+  font-size: 50px;
+  color: gray;
+  padding-top: 10px;
+  text-shadow: 2px 2px 8px rgb(11, 64, 82);
+  text-align: center;
+}
+
+.todo_container {
+  width: 700px;
+  margin: 30px auto 0;
+  background-color: white;
+}
+.todo_container .add_task {
+  padding: 15px;
+  background-color: rgb(17, 79, 100);
+  position: relative;
+}
+.todo_container .add_task input {
+  display: inline-block;
+  padding: 10px 15px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 90%;
+  color: white;
+  font-size: 20px;
+}
+.todo_container .tasks_content {
+  padding: 15px;
+  background-color: lightblue;
+}
+.todo_container .tasks_content .no_tasks {
+  color: #777;
+  font-size: 15px;
+}
+.todo_container .tasks_content > span {
+  display: block;
+  background-color: #fff;
+  padding: 10px;
+}
+.todo_container .tasks_content > span :not(:last-child) {
+  margin-bottom: 5px;
+}
+.todo_container .tasks_content .task_box {
+  margin-bottom: 10px;
+}
+.todo_container .tasks_content .task_box input {
+  border: none;
+  width: 150px;
+}
+.todo_container .tasks_content .task_box .delete, .todo_container .tasks_content .task_box .edit, .todo_container .tasks_content .task_box .save {
+  float: right;
+  background-color: lightblue;
+  padding: 4px 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.todo_container .tasks_content .finished {
+  text-decoration: line-through;
+}
+
+.plus0 {
+  display: inline-block;
+}
+.plus0 .plus {
+  background-color: lightblue;
+  position: absolute;
+  height: 43px;
+  width: 43px;
+  top: 15px;
+  line-height: 43px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 38px;
+}
+
+.task_stats {
+  overflow: hidden;
+  margin: 10px auto;
+  width: 600px;
+  font-size: 12px;
+}
+.task_stats .tasks_completed {
+  width: 50%;
+  float: left;
+  padding: 10px;
+  text-align: left;
+}
+.task_stats .tasks_completed span {
+  color: white;
+  padding: 1px 5px;
+  font-size: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  background-color: brown;
+}
+.task_stats .tasks_count {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+.task_stats .tasks_count span {
+  color: white;
+  padding: 1px 5px;
+  font-size: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  background-color: blueviolet;
+}
+
+.footer {
+  display: flex;
+  text-align: center;
+  margin-left: 700px;
+}
+.footer button {
+  background-color: lightblue;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+}
+
+.checkbox {
+  margin-right: 3px;
+}
+
+.progress {
+  position: relative;
+  width: 210px;
+  height: 30px;
+  background: #9cbab4;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 100px;
+}
+.progress .progress__fill {
+  width: 0%;
+  height: 100%;
+  background: #009579;
+  transition: all 0.2s;
+}
+.progress .progress__text {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  font: bold 14px "Quicksand", sans-serif;
+  color: #ffffff;
+}
+
+input:focus {
+  border: none;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+  </head>
+  <body>
+    <header class="header">
+        <h1>To Do List</h1>
+    </header>
+   
+    <div class="todo_container">
+      <div class="add_task">
+        <input type="text" placeholder="what do you want to do?"> 
+        <div class="plus0"> <span class="plus">+</span></div>
+      </div>
+      
+      <div class="tasks_content" id="task_content">
+        <span class="no_tasks">No Tasks To Show</span>
+        
+       
+
+       
+      </div>
+    </div>
+
+
+
+    <div class="task_stats">
+      <div class="tasks_count">
+        Tasks <span id="task_count">0</span>
+      </div>
+      <div class="tasks_completed">
+        Completed <span id="task_completed">0</span>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="progress">
+        <div class="progress__fill" id="progress__fill"></div>
+        <span class="progress__text" id="progress__text">0%</span>
+      </div>
+    <button class="remove_copleted" id="remove_checked">
+      remove checked X
+    </button>
+    
+  </div>
+
+  
+    <script src="js/main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
